@@ -1,0 +1,23 @@
+<div class="container" style="background:lightblue; padding: 10px; float: left; width:500px; height:500px; ">
+
+<h2>Model Driven Form</h2>
+
+<div>
+   <form [formGroup]="formdata" class="text-center border border-light p-5" (ngSubmit) = "onClickSubmit(formdata.value)" >
+      <input type="text" class="form-control" name="emailid" placeholder="Enter Email" 
+         formControlName="emailid">
+      <br/>
+      
+      <input type="password" class="form-control" name="passwd" 
+         placeholder="Enter Password" formControlName="passwd">
+      <br/>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+<p>
+   Email entered is : {{emailid}}
+</p>
+   </form>
+</div>
+
+
+</div>

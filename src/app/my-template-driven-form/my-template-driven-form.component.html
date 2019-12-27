@@ -1,0 +1,21 @@
+<div class="container" style="background:lightblue; padding: 10px; float: left; width:500px; height: 500px;">
+ <h2>Template Driven Form</h2>
+
+<div>
+<form class="text-center border border-light p-5" #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+      
+   
+   <input type = "text" name = "emailid" class="form-control" placeholder = "Enter Email" ngModel>
+   <br>
+   
+   <input type = "password" name = "passwd" class="form-control" placeholder = "Enter Passsword" ngModel>
+   
+   <br><button type="submit" class="btn btn-primary" >Submit</button>
+<p>
+   Email entered is : {{this.em}}
+</p>
+
+</form>
+
+</div>
+</div>

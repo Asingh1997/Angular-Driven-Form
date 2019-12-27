@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+
+import { MyModelDrivenFormComponent } from './my-model-driven-form/my-model-driven-form.component';
+import { MyTemplateDrivenFormComponent } from './my-template-driven-form/my-template-driven-form.component';
+
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    MyModelDrivenFormComponent,
+    MyTemplateDrivenFormComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MyTemplateDrivenFormComponent, MyModelDrivenFormComponent]
 })
 export class AppModule { }
